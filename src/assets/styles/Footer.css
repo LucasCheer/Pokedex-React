@@ -1,0 +1,8 @@
+footer{
+  text-align: center;
+  width: 100%;
+  background-color: purple;
+    & p{
+      font-family:system-ui, sans-serif
+    }
+}
