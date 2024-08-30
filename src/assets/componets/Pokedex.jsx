@@ -5,11 +5,12 @@ export default function Pokedex(){
         <>
         <main className='pokedex'>
             <figure>
-                <img src="" alt="Pokemon" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/025.png" alt="Pokemon" />
             </figure>
-            <div>
+            <div className='main-pokemon'>
                 <h2 className='name-pokemon'>Pikachu</h2>
-                <p className='info-pokemon'>Es lindo</p>
+                <span className='num-pokemon'>#39</span>
+                <p className='info-pokemon'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tenetur quam facere saepe! Debitis sequi aliquid, odit cumque recusandae dolorum?</p>
             </div>
         </main>
         </>
