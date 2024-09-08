@@ -1,10 +1,23 @@
 .pokedex{
   width: 600px;
   height: 500px;
-  background-color: rgb(197, 174, 178);
+  padding: 20px;
   display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  background-color: rgb(124, 124, 124);
     & figure{
-      
+      width: 200px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    & .container-info{
+      width: 200px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
 }

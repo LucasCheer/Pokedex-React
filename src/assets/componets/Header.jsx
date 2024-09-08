@@ -4,7 +4,7 @@ export default function Header(){
     return(
         <>
         <header>
-            <h1>Pokedex</h1>
+            <h1 className='title'>Pokedex</h1>
         </header>
         </>
     )
