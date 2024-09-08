@@ -11,6 +11,9 @@
       height: 100%;
       display: flex;
       align-items: center;
+        & img{
+          width: 100%;
+        }
     }
     & .container-info{
       width: 200px;
