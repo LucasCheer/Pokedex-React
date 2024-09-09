@@ -28,7 +28,7 @@ export default function Pokedex() {
     <>
       <div className='container-src'>
         <input id='input' type="text" />
-        <button onClick={handleSearch}>Buscar</button>
+        <button onClick={handleSearch}>Search</button>
       </div>
       <main className='pokedex'>
         <figure className='img-container'>
