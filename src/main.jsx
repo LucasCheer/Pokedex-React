@@ -8,7 +8,6 @@ import './index.css'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Header/>
-    <Pokedex namePokemon={"Lucas"} numPokemon={45}/>
-    <Footer/>
+    <Pokedex/>
   </StrictMode>,
 )

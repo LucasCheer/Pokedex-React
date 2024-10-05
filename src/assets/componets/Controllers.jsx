@@ -9,7 +9,7 @@ export async function getDataPokemon(id) {
       return {
         id: data.id,
         name: data.name,
-        sprite_front: data.sprites.front_default,
+        sprite_front: data.sprites.other["official-artwork"].front_default,
         sprite_back: data.sprites.back_default,
         type: data.types[0].type.name,
         peso: data.weight,

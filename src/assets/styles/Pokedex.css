@@ -1,26 +1,57 @@
+.main-pokedex{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
 .container-src{
+  display: flex;
   background-color: transparent;
+  gap:20px;
     & input{
-      height: 1.3rem;
+      font-size: 1rem;
+      width: 30ch;
+      height: 2rem;
+      padding: 5px 12px;
+      border-radius: 15px;
+    }
+    & button{
+      color: #fff;
+      background-color: rgb(116, 177, 25);
+      font-family: .8rem;
+      padding: 8px 10px;
+      border-radius: 12px;
     }     
 }
 
 .pokedex{
-  width: 600px;
+  width: 400px;
   height: 500px;
-  padding: 50px;
+  padding: 40px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  border-radius: 12px;
-  border: 3px solid red;
-  background-color: rgb(124, 124, 124);
+  align-items: center;
+  border-radius: 25px;
+  border: 3px solid rgb(136, 136, 136);
+  color: #000;
+  background-color: rgb(247, 247, 247);
+  box-shadow: rgba(0, 0, 0, 0.644) 0px 2px 5px;
     & figure{
       width: 200px;
       height: 100%;
       display: flex;
       align-items: center;
+      justify-content: center;
+      overflow: hidden;
         & img{
-          width: 100%;
+          height: 200px;
         }
     }
     & .container-info{

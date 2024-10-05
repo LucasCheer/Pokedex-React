@@ -12,7 +12,7 @@ export default function Pokedex() {
   const [pokemonPeso, setPokemonPeso] = useState('');
   // Función para la busqueda
   const handleSearch = async () => {
-    const input = document.getElementById('input').value; // Obtener el ID
+    const input = document.getElementById('input').value.toLowerCase(); // Obtener el ID
     const pokemonData = await getDataPokemon(input);
     if (pokemonData) {
       setPokemonID(pokemonData.id);
@@ -25,9 +25,9 @@ export default function Pokedex() {
   };
 
   return (
-    <>
+    <main className='main-pokedex'>
       <div className='container-src'>
-        <input id='input' type="text" />
+        <input id='input' type="text" placeholder='Enter ID or Name of Pokemon..' />
         <button onClick={handleSearch}>Search</button>
       </div>
       <main className='pokedex'>
@@ -35,12 +35,12 @@ export default function Pokedex() {
           <img src={pokemonImg} alt={pokemonName}/>
         </figure>
         <div className='container-info'>
-          <h2 className='name-pokemon'>Name: {pokemonName}</h2>
+          <h2 className='name-pokemon'>{pokemonName}</h2>
           <p>PokemonID: #{pokemonID}</p>
           <p>Type: {pokemonType}</p>
           <p>Weight: {pokemonPeso} Hectograms</p>
         </div>
       </main>
-    </>
+    </main>
   );
 }
