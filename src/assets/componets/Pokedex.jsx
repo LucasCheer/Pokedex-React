@@ -23,6 +23,11 @@ export default function Pokedex() {
       setPokemonPeso(pokemonData.peso);
     }
   };
+  function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
+  const pokemonNameCapitalize = capitalize(pokemonName);
 
   return (
     <main className='main-pokedex'>
@@ -35,7 +40,7 @@ export default function Pokedex() {
           <img src={pokemonImg} alt={pokemonName}/>
         </figure>
         <div className='container-info'>
-          <h2 className='name-pokemon'>{pokemonName}</h2>
+          <h2 className='name-pokemon'>{pokemonNameCapitalize}</h2>
           <p>PokemonID: #{pokemonID}</p>
           <p>Type: {pokemonType}</p>
           <p>Weight: {pokemonPeso} Hectograms</p>
