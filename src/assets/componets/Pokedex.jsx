@@ -47,9 +47,9 @@ export default function Pokedex() {
             <h2 className='name-pokemon'>{pokemonNameCapitalize}</h2>
             <p className='pokemon-id'>#{pokemonID}</p>
           </div>
-          <p className='info'>Type: {pokemonType}</p>
-          <p className='info'>Height: {pokemonAltura / 10} m</p>
-          <p className='info'>Weight: {pokemonPeso / 10} kg</p>
+          <p className='info'><span className='stat'>Type</span><span>{pokemonType}</span></p>
+          <p className='info'><span className='stat'>Height</span> <span>{pokemonAltura / 10} m</span></p>
+          <p className='info'><span className='stat'>Weight</span> <span>{pokemonPeso / 10} kg</span></p>
         </div>
       </main>
     </main>

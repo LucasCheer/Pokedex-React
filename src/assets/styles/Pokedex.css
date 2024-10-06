@@ -88,9 +88,19 @@
           font-weight: bolder;
         }
         & .info{
+          background-color: #b6b6b6c2;
+          border-radius: 10px;
+          padding: 5px 10px;
+          display: flex;
+          justify-content: space-between;
           color: #5c5c5c;
           font-family: system-ui, -apple-system;
           font-weight: 600;
+            & .stat{
+              color: #464646;
+              font-weight: 700;
+              letter-spacing: .5px;
+            }
         }
     }
 }
