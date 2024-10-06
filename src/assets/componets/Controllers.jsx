@@ -13,7 +13,7 @@ export async function getDataPokemon(id) {
         sprite_back: data.sprites.back_default,
         type: data.types[0].type.name,
         peso: data.weight,
-
+        altura: data.height,
       };
     } catch (error) {
       console.error(error);

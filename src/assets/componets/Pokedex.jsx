@@ -11,6 +11,7 @@ export default function Pokedex() {
   const [pokemonImgBack, setPokemonImgBack] = useState('');
   const [pokemonType, setPokemonType] = useState('');
   const [pokemonPeso, setPokemonPeso] = useState('');
+  const [pokemonAltura, setPokemonAltura] = useState(''); 
   // Función para la busqueda
   const handleSearch = async () => {
     const input = document.getElementById('input').value.toLowerCase(); // Obtener el ID
@@ -22,6 +23,7 @@ export default function Pokedex() {
       setPokemonImgBack(pokemonData.sprite_back);
       setPokemonType(pokemonData.type);
       setPokemonPeso(pokemonData.peso);
+      setPokemonAltura(pokemonData.altura);
     }
   };
   function capitalize(str) {
@@ -41,10 +43,13 @@ export default function Pokedex() {
           <img src={pokemonImg} alt={pokemonName}/>
         </figure>
         <div className='container-info'>
-          <h2 className='name-pokemon'>{pokemonNameCapitalize}</h2>
-          <p className='pokemon-id'>#{pokemonID}</p>
-          <p>Type: {pokemonType}</p>
-          <p>Weight: {pokemonPeso} Hectograms</p>
+          <div className='title-pokemon'>
+            <h2 className='name-pokemon'>{pokemonNameCapitalize}</h2>
+            <p className='pokemon-id'>#{pokemonID}</p>
+          </div>
+          <p className='info'>Type: {pokemonType}</p>
+          <p className='info'>Height: {pokemonAltura / 10} m</p>
+          <p className='info'>Weight: {pokemonPeso / 10} kg</p>
         </div>
       </main>
     </main>
