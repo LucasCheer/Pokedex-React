@@ -17,6 +17,15 @@ export async function getDataPokemon(id) {
       };
     } catch (error) {
       console.error(error);
+      return {
+        id: null,
+        name: "Pokemon invalid",
+        sprite_front: null,
+        sprite_back: null,
+        type: null,
+        peso: null,
+        altura: null,
+      }
     }
   }
 
