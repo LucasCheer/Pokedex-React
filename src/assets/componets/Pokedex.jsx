@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Pokedex.css';
 import { getDataPokemon } from './controllers';
 
+
 export default function Pokedex() {
   // Defino un estado para cada componente
   const [pokemonID, setPokemonID] = useState(null);
@@ -41,7 +42,7 @@ export default function Pokedex() {
         </figure>
         <div className='container-info'>
           <h2 className='name-pokemon'>{pokemonNameCapitalize}</h2>
-          <p>PokemonID: #{pokemonID}</p>
+          <p className='pokemon-id'>#{pokemonID}</p>
           <p>Type: {pokemonType}</p>
           <p>Weight: {pokemonPeso} Hectograms</p>
         </div>
